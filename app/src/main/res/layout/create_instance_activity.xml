@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg">
+
+
+    <EditText
+        android:id="@+id/titleNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/border"
+        android:fontFamily="serif"
+        android:hint="TITLE"
+        android:padding="17dp"
+        android:textColor="@color/black"
+        android:textColorHint="#7A7474"
+        />
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="300sp"
+        android:layout_below="@+id/titleNote"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border">
+
+        <EditText
+            android:id="@+id/descriptionNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="15dp"
+            android:layout_marginStart="11dp"
+            android:fontFamily="serif"
+            android:hint="DESCRIPTION"
+            android:minHeight="40dp"
+
+            android:paddingBottom="250dp"
+            android:textColor="@color/black"
+            android:textColorHint="#7A7474" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="419dp"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="serif"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/titleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="serif"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/descriptionNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNote"
+        android:text="Description"
+        android:paddingLeft="5dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+    android:contentDescription="Notes"
+    android:paddingLeft="290dp"
+        />
+
+</RelativeLayout>
