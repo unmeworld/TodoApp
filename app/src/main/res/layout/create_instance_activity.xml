@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgimg">
 
-
     <EditText
         android:id="@+id/titleNote"
         android:layout_width="match_parent"
